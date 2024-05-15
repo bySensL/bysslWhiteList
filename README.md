@@ -1,6 +1,6 @@
 BysslWhiteList just a plugin for minecraft server, where online mode is false. Whitelist using database mysql.
 
-Create a table before starting.
+1. Create a table before starting.
 ```
 CREATE TABLE `tablename` (
   `id` int NOT NULL,
@@ -9,9 +9,9 @@ CREATE TABLE `tablename` (
   `included` tinyint(1) NOT NULL
 )
 ```
-After starting the server, change the config.yml file and enter there
-IP address of the host (dbhost)
-Database User (dbuser)
-User password (dbpassword)
-the name of your database (db)
-and the name of the table (tablename)
+2. After starting the server, change the config.yml file and enter there:
+2.1. IP address of the host (dbhost)
+2.2. Database User (dbuser)
+2.3. User password (dbpassword)
+2.4. The name of your database (db)
+2.5. The name of the table (tablename)
