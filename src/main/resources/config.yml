@@ -1,0 +1,9 @@
+host: dbhost
+user: dbuser
+password: dbpassword
+database: db
+port: 3306
+table: table
+
+#status of the whitelist
+enabled: true

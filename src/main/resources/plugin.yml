@@ -1,0 +1,41 @@
+name: bysslWhiteList
+version: '${project.version}'
+main: me.bysensl.bysslwhitelist.BysslWhiteList
+api-version: '1.20'
+prefix: bslWhiteList
+load: STARTUP
+authors: [bySensL]
+description: a whitelist that supports api requests
+commands:
+  bwl:
+    description: a whitelist that supports api requests
+    aliases: [bysslWhitelist]
+    usage: /<command> <add|del|on|off> [player]
+permissions:
+  bysslWhitelist.*:
+    description: Gives access to all MySQLWhitelist commands
+    children:
+      bysslWhitelist.add: true
+      bysslWhitelist.del: true
+      bysslWhitelist.on: true
+      bysslWhitelist.off: true
+      bysslWhitelist.reload: true
+      bysslWhitelist.help: true
+  bysslWhitelist.add:
+    description: Allows you to add someone to the whitelist
+    default: op
+  bysslWhitelist.del:
+    description: Allows you to remove someone from the whitelist
+    default: op
+  bysslWhitelist.on:
+    description: Allows you to enable the whitelist
+    default: op
+  bysslWhitelist.off:
+    description: Allows you to disable the whitelist
+    default: op
+  bysslWhitelist.reload:
+    description: Allows you to disable the whitelist
+    default: op
+  bysslWhitelist.help:
+    description: Allows you to disable the whitelist
+    default: op
