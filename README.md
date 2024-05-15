@@ -1,6 +1,6 @@
 BysslWhiteList just a plugin for minecraft server, where online mode is false. Whitelist using database mysql.
 
-**1. Create a table before starting.
+**[1. Create a table before starting.]
 ```
 CREATE TABLE `tablename` (
   `id` int NOT NULL,
