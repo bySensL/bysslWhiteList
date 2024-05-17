@@ -242,10 +242,10 @@ public class BysslWhiteList extends JavaPlugin implements Listener, TabCompleter
                         sender.sendMessage(ChatColor.GREEN + "WhiteList disabled");
                     }
                 } else {
-                    sender.sendMessage(ChatColor.RED + "Usage:" + ChatColor.WHITE + " /bwl add/del/on/off [player]");
+                    sender.sendMessage(ChatColor.RED + "Unknow command. Type /bwl help to see the list of commands");
                 }
             } else {
-                sender.sendMessage(ChatColor.RED + "Usage:" + ChatColor.WHITE + " /bwl add/del/on/off [player]");
+                sender.sendMessage(ChatColor.RED + "Unknow command. Type /bwl help to see the list of commands");
             }
 
             return true;
